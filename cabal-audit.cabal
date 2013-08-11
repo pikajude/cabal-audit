@@ -1,5 +1,5 @@
 name:                cabal-audit
-version:             0.1.0.0
+version:             0.2.0.0
 synopsis:            Check how up-to-date your .cabal dependencies are.
 description:         Check how up-to-date your .cabal dependencies are.
 homepage:            https://github.com/joelteon/cabal-audit.git
@@ -14,6 +14,10 @@ cabal-version:       >=1.8
 executable cabal-audit
   hs-source-dirs:      src
   main-is:             Main.hs
+  other-modules:       Audit
+                       Audit.Latest
+                       Audit.Options
+                       Audit.Panic
   build-depends:       base ==4.6.*,
                        Cabal == 1.16.*,
                        directory == 1.2.*,
