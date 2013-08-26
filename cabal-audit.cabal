@@ -18,12 +18,12 @@ executable cabal-audit
                        Audit.Latest
                        Audit.Options
                        Audit.Panic
-  build-depends:       base ==4.6.*,
-                       Cabal == 1.16.*,
-                       directory == 1.2.*,
-                       filepath == 1.3.*,
-                       HTTP == 4000.2.*,
-                       optparse-applicative == 0.5.*
+  build-depends:       base >=4.4 && < 4.8,
+                       Cabal >= 1.16 && < 1.18,
+                       directory >= 1.2 && < 1.4,
+                       filepath >= 1.3 && < 1.5,
+                       HTTP >= 4000.2 && < 4000.4,
+                       optparse-applicative >= 0.5
 
 source-repository head
   type:     git
