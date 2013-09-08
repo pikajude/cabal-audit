@@ -1,5 +1,5 @@
 name:                cabal-audit
-version:             0.2.0.0
+version:             0.3.0.0
 synopsis:            Check how up-to-date your .cabal dependencies are.
 description:         Check how up-to-date your .cabal dependencies are.
 homepage:            https://github.com/joelteon/cabal-audit.git
