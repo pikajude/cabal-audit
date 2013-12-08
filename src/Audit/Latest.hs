@@ -23,7 +23,7 @@ getLatestVersionOf pkg = do
                     ParseOk ws d -> do
                         mapM_ (worry . showPWarning (pkg ++ ".cabal")) ws
                         return . pkgVersion . package $ packageDescription d
-    where url = printf "http://new-new-hackage.haskell.org/package/%s/src/%s.cabal" pkg pkg
+    where url = printf "http://hackage.haskell.org/package/%s/src/%s.cabal" pkg pkg
           giveUp pe = case ln of
                           Nothing -> panic $ printf "Error when parsing %s.cabal: %s" pkg s
                           Just num -> panic $ printf "Error when parsing %s.cabal: line %d: %s" pkg num s
